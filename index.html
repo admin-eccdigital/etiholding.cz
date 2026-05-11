@@ -641,13 +641,14 @@
   /* ============ COOKIE BANNER ============ */
   .cookie-banner{
     position: fixed; bottom: 0; left: 0; right: 0;
-    background: #1a2a5c;
-    color: #ffffff;
-    padding: 20px var(--pad);
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 22px var(--pad);
     z-index: 500;
     display: none;
-    font-size: 15px; line-height: 1.6;
-    box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+    font-size: 15px; line-height: 1.6; font-weight: 400;
+    box-shadow: 0 -4px 24px rgba(0,0,0,.15);
+    border-top: 1px solid #ddd9cf;
   }
   .cookie-banner.show{ display: block; }
   .cookie-inner{
@@ -655,18 +656,18 @@
     display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
   }
   .cookie-inner p{ flex: 1; min-width: 280px; margin: 0; }
-  .cookie-inner a{ color: var(--bg); text-decoration: underline; }
+  .cookie-inner a{ color: var(--ink); font-weight: 500; }
   .cookie-btns{ display: flex; gap: 12px; flex-shrink: 0; }
   .cookie-btns button{
     padding: 10px 20px;
     font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
-    font-weight: 500; cursor: pointer; border: 1px solid rgba(251,250,247,.4);
-    background: transparent; color: var(--bg);
+    font-weight: 500; cursor: pointer; border: 1px solid var(--line);
+    background: transparent; color: var(--ink);
     transition: background .2s ease, color .2s ease;
   }
-  .cookie-btns button.accept{ background: var(--bg); color: var(--ink); border-color: var(--bg); }
-  .cookie-btns button.accept:hover{ background: transparent; color: var(--bg); }
-  .cookie-btns button.reject:hover{ background: rgba(251,250,247,.12); }
+  .cookie-btns button.accept{ background: var(--ink); color: #fff; border-color: var(--ink); }
+  .cookie-btns button.accept:hover{ background: var(--accent-deep); }
+  .cookie-btns button.reject:hover{ background: var(--bg-2); }
 </style>
 </head>
 <body>
