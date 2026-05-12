@@ -328,7 +328,8 @@
   .brand-card:nth-child(3){ grid-column: span 2; }
   .brand-card:nth-child(4){ grid-column: 2 / span 2; }
   .brand-card:nth-child(5){ grid-column: 4 / span 2; }
-  .brand-card:hover{ border-color: var(--ink); }
+  a.brand-card-link{ display: contents; text-decoration: none; color: inherit; }
+  .brand-card:hover{ border-color: var(--ink); cursor: pointer; }
   .brand-card .photo{
     aspect-ratio: 4/3;
     overflow: hidden; background: var(--bg-2);
@@ -807,6 +808,7 @@
       <div class="brand-grid">
 
         <!-- 1 — Apartmány Borská -->
+        <a href="https://apartmany-borska.cz/" target="_blank" rel="noopener" class="brand-card-link">
         <article class="brand-card">
           <div class="photo">
             <img src="assets/photo-borska.jpg" alt="Apartmány Borská" />
@@ -820,13 +822,15 @@
               Plně vybavené apartmány v centru Plzně pro služební cesty, rodinné výjezdy i
               dlouhodobé pobyty. Klid soukromého bydlení, servis hotelu.
             </p>
-            <a href="https://apartmany-borska.cz/" target="_blank" rel="noopener" class="more">Web značky
+            <span class="more">Web značky
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            </span>
           </div>
         </article>
+        </a>
 
         <!-- 2 — Jprogress Group -->
+        <a href="https://j-progress.cz/" target="_blank" rel="noopener" class="brand-card-link">
         <article class="brand-card">
           <div class="photo">
             <img src="assets/photo-jprogress.jpg" alt="Jprogress Group" />
@@ -840,13 +844,15 @@
               Personální agentura zaměřená na výrobu, logistiku a stavebnictví. Spojujeme firmy
               s prověřenými lidmi — bez agenturních zkratek a se závazkem k oběma stranám.
             </p>
-            <a href="https://j-progress.cz/" target="_blank" rel="noopener" class="more">Web značky
+            <span class="more">Web značky
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            </span>
           </div>
         </article>
+        </a>
 
         <!-- 3 — AZ Factory -->
+        <a href="https://azfactory.cz/" target="_blank" rel="noopener" class="brand-card-link">
         <article class="brand-card">
           <div class="photo">
             <img src="assets/photo-azfactory.jpg" alt="AZ Factory" />
@@ -860,13 +866,15 @@
               Realizace rezidenčních a komerčních staveb na klíč. Od přípravy projektu po
               kolaudaci — s důrazem na materiál, technologie a řemeslnou preciznost.
             </p>
-            <a href="https://azfactory.cz/" target="_blank" rel="noopener" class="more">Web značky
+            <span class="more">Web značky
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            </span>
           </div>
         </article>
+        </a>
 
         <!-- 4 — Jídelna U Koně -->
+        <a href="https://jidelna-u-kone.makro.rest/" target="_blank" rel="noopener" class="brand-card-link">
         <article class="brand-card">
           <div class="photo">
             <img src="assets/photo-jidelna.jpg" alt="Jídelna U Koně" />
@@ -880,11 +888,12 @@
               Kuchyně postavená na sezónních surovinách a domácí klasice. Denní menu pro firmy
               i veřejnost, catering a rozvoz pro pracovní obědy.
             </p>
-            <a href="https://jidelna-u-kone.makro.rest/" target="_blank" rel="noopener" class="more">Web značky
+            <span class="more">Web značky
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5h12M9 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
+            </span>
           </div>
         </article>
+        </a>
 
         <!-- 5 — Coming soon -->
         <article class="brand-card soon">
